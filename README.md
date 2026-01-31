@@ -152,6 +152,31 @@ cd my-todo-app && jac add
 
 ---
 
+### Multi-User Todo App with AI Meal Planner
+
+Extends the todo app with an AI-powered meal planner that generates shopping lists with costs and nutritional indicators using Claude.
+
+```bash
+jac create my-meals-app --use multi-user-todo-meals-app.jacpack
+cd my-meals-app && jac add
+```
+
+**Required environment variables:**
+
+```bash
+export ANTHROPIC_API_KEY=your_anthropic_api_key
+```
+
+**Features:**
+- Everything from the Multi-User Todo App, plus:
+- AI meal planner -- describe a meal, get a full ingredient shopping list
+- Estimated costs in JMD with total calculation
+- Carbohydrate/glucose spike indicators per ingredient
+- Two-column responsive layout (todos + meal planner side by side)
+- Structured LLM output using `byllm` with typed objects and semantic annotations
+
+---
+
 ### Jac Playground
 
 An interactive browser-based code editor and runner for Jac. Runs entirely client-side using WebAssembly and Pyodide -- no backend required.
