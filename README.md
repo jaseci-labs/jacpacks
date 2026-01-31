@@ -134,6 +134,24 @@ export OPENAI_API_KEY=your_openai_api_key
 
 ---
 
+### Multi-User Todo App
+
+A full-stack authenticated todo list with hierarchical sub-todos and priority levels. A good starting point for learning Jac's fullstack capabilities.
+
+```bash
+jac create my-todo-app --use multi-user-todo-app.jacpack
+cd my-todo-app && jac add
+```
+
+**Features:**
+- User authentication (register, login, token-based sessions)
+- Todo CRUD with three priority levels (high, medium, low)
+- Hierarchical sub-todos with nested display
+- CSS-driven dark theme UI with no inline styles
+- Declaration/implementation separation pattern (`frontend.cl.jac` + `frontend.impl.jac`)
+
+---
+
 ### Jac Playground
 
 An interactive browser-based code editor and runner for Jac. Runs entirely client-side using WebAssembly and Pyodide -- no backend required.
