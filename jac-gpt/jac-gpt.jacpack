@@ -51,7 +51,9 @@
       "scale": {
         "kubernetes": {
           "app_name": "jac-gpt-test",
-          "namespace": "jac-gpt-test"
+          "namespace": "jac-gpt-test",
+          "jaseci_repo_url": "https://github.com/jaseci-labs/jaseci.git",
+          "jaseci_branch": "main"
         }
       }
     }
