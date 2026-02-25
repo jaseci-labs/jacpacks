@@ -18,10 +18,10 @@ pip install jaseci
 
 This installs `jaclang` along with all official plugins (`byllm`, `jac-client`, `jac-scale`, `jac-super`).
 
-If you only need the language runtime:
+Or 
 
 ```bash
-pip install jaclang
+pip install jaclang byllm jac-scale jac-client
 ```
 
 Verify your installation:
