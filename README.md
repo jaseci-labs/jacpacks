@@ -57,31 +57,6 @@ The server runs at **http://localhost:8000** by default.
 
 ## Available Jacpacks
 
-### AI Study Helper
-
-An intelligent study companion that transforms text into structured educational material using specialized AI agents.
-
-```bash
-jac create my-study-app --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/AI_Study_Helper/AI_Study_Helper.jacpack
-cd my-study-app && jac install
-jac start main.jac
-```
-
-**Required environment variables:**
-
-```bash
-export GEMINI_API_KEY=your_gemini_api_key
-export TAVILY_API_KEY=your_tavily_api_key
-```
-
-**Features:**
-- Agent-based architecture with dedicated Quiz, Summarizer, Explanation, and Flashcard agents
-- Interactive assessment with multiple-choice question generation and progress tracking
-- Web search integration via Tavily for real-time information retrieval
-- Four-panel study workspace (quiz, summarize, explain, flashcards)
-
----
-
 ### Algo
 
 A voice-enabled personal AI assistant with calendar, email, and GitHub integration.
@@ -192,6 +167,31 @@ export OPENAI_API_KEY=your_openai_api_key
 **Features:**
 - Conversational interface for querying Jac documentation
 - MongoDB-backed data persistence
+
+---
+
+### AI Study Helper
+
+An intelligent study companion that transforms text into structured educational material using specialized AI agents.
+
+```bash
+jac create my-study-app --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/AI_Study_Helper/AI_Study_Helper.jacpack
+cd my-study-app && jac install
+jac start main.jac
+```
+
+**Required environment variables:**
+
+```bash
+export GEMINI_API_KEY=your_gemini_api_key
+export TAVILY_API_KEY=your_tavily_api_key
+```
+
+**Features:**
+- Agent-based architecture with dedicated Quiz, Summarizer, Explanation, and Flashcard agents
+- Interactive assessment with multiple-choice question generation and progress tracking
+- Web search integration via Tavily for real-time information retrieval
+- Four-panel study workspace (quiz, summarize, explain, flashcards)
 
 ---
 
