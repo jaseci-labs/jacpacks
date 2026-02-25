@@ -38,21 +38,16 @@ Install the [Jac extension for VS Code](https://marketplace.visualstudio.com/ite
 
 ## Quick Start
 
-Every jacpack follows the same workflow:
+Every jacpack follows the same three-step workflow -- no cloning required:
 
 ```bash
-# 1. Create a new project from a jacpack
-jac create my-app --use <template>
+# 1. Create a new project directly from GitHub
+jac create my-app --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/<folder>/<name>.jacpack
 
-# 2. Move into the project directory
-cd my-app
+# 2. Install dependencies
+cd my-app && jac install
 
-# 3. Install dependencies
-jac add
-
-# 4. Set any required environment variables (see each jacpack's section below)
-
-# 5. Start the application
+# 3. Start the application
 jac start main.jac
 ```
 
@@ -67,8 +62,9 @@ The server runs at **http://localhost:8000** by default.
 An intelligent study companion that transforms text into structured educational material using specialized AI agents.
 
 ```bash
-jac create my-study-app --use AI_Study_Helper.jacpack
-cd my-study-app && jac add
+jac create my-study-app --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/AI_Study_Helper/AI_Study_Helper.jacpack
+cd my-study-app && jac install
+jac start main.jac
 ```
 
 **Required environment variables:**
@@ -86,37 +82,14 @@ export TAVILY_API_KEY=your_tavily_api_key
 
 ---
 
-### TasteTalk
-
-A restaurant feedback management system that collects, analyzes, and responds to customer feedback with AI-powered insights.
-
-```bash
-jac create my-tastetalk --use TasteTalk.jacpack
-cd my-tastetalk && jac add
-```
-
-**Required environment variables:**
-
-```bash
-export GEMINI_API_KEY=your_gemini_api_key
-```
-
-**Features:**
-- Customer portal for submitting feedback with AI-generated responses
-- Admin dashboard with sentiment distribution charts, category tracking, and AI summaries
-- Multi-language support (Sinhala/Tamil)
-- Persistent storage with SQLite-backed TieredMemory
-- Graph database backend via Jac-Scale
-
----
-
 ### Algo
 
 A voice-enabled personal AI assistant with calendar, email, and GitHub integration.
 
 ```bash
-jac create my-algo --use Algo.jacpack
-cd my-algo && jac add
+jac create my-algo --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/Algo/Algo.jacpack
+cd my-algo && jac install
+jac start main.jac
 ```
 
 **Required environment variables:**
@@ -139,8 +112,9 @@ export OPENAI_API_KEY=your_openai_api_key
 A full-stack authenticated todo list with hierarchical sub-todos and priority levels. A good starting point for learning Jac's fullstack capabilities.
 
 ```bash
-jac create my-todo-app --use multi-user-todo-app.jacpack
-cd my-todo-app && jac add
+jac create my-todo-app --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/multi-user-todo-app/multi-user-todo-app.jacpack
+cd my-todo-app && jac install
+jac start main.jac
 ```
 
 **Features:**
@@ -157,8 +131,9 @@ cd my-todo-app && jac add
 Extends the todo app with an AI-powered meal planner that generates shopping lists with costs and nutritional indicators using Claude.
 
 ```bash
-jac create my-meals-app --use multi-user-todo-meals-app.jacpack
-cd my-meals-app && jac add
+jac create my-meals-app --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/multi-user-todo-meals-app/multi-user-todo-meals-app.jacpack
+cd my-meals-app && jac install
+jac start main.jac
 ```
 
 **Required environment variables:**
@@ -182,9 +157,9 @@ export ANTHROPIC_API_KEY=your_anthropic_api_key
 An interactive browser-based code editor and runner for Jac. Runs entirely client-side using WebAssembly and Pyodide -- no backend required.
 
 ```bash
-jac create my-playground --use jacplayground.jacpack
-cd my-playground && jac add --npm
-jac start
+jac create my-playground --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/jac-playground/jacPlayground.jacpack
+cd my-playground && jac install
+jac start main.jac
 ```
 
 **Features:**
@@ -203,8 +178,9 @@ jac start
 A documentation assistant for the Jac language, built as a fullstack Jac application.
 
 ```bash
-jac create my-jac-gpt --use jac-gpt.jacpack
-cd my-jac-gpt && jac add
+jac create my-jac-gpt --use https://raw.githubusercontent.com/jaseci-labs/jacpacks/refs/heads/main/jac-gpt/jac-gpt.jacpack
+cd my-jac-gpt && jac install
+jac start main.jac
 ```
 
 **Required environment variables:**
