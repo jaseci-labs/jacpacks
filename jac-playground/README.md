@@ -26,7 +26,7 @@ cd my-jac-playground
 ### 3. Install dependencies
 
 ```bash
-jac add --npm
+jac install --npm
 ```
 
 This will install both Python and npm dependencies defined in `jac.toml`.
