@@ -27,7 +27,7 @@ cd my-study-helper
 ### 3. Install dependencies
 
 ```bash
-jac add
+jac install
 ```
 
 This will install both Python and npm dependencies defined in `jac.toml`.

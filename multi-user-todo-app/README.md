@@ -22,7 +22,7 @@ cd my-todo-app
 
 ### 3. Install dependencies
 ```bash
-jac add
+jac install
 ```
 This will install both Python and npm dependencies defined in `jac.toml`.
 
@@ -109,7 +109,7 @@ The `jac.toml` file contains all project configuration. Key sections:
 
 1. **Port already in use**: Change the port with `jac start main.jac --port 8001`
 2. **Stale data after schema changes**: Delete `.jac/data/*.db*` files and restart
-3. **npm install failures**: Ensure Node.js 18+ is installed and run `jac add` again
+3. **npm install failures**: Ensure Node.js 18+ is installed and run `jac install` again
 
 ## Learn More
 

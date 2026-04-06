@@ -23,7 +23,7 @@ cd my-meals-app
 
 ### 3. Install dependencies
 ```bash
-jac add
+jac install
 ```
 This will install both Python and npm dependencies defined in `jac.toml`.
 
@@ -128,7 +128,7 @@ The `jac.toml` file contains all project configuration. Key sections:
 1. **Missing API key**: Ensure `ANTHROPIC_API_KEY` is exported in your shell before running `jac start`
 2. **Port already in use**: Change the port with `jac start main.jac --port 8001`
 3. **Stale data after schema changes**: Delete `.jac/data/*.db*` files and restart
-4. **npm install failures**: Ensure Node.js 18+ is installed and run `jac add` again
+4. **npm install failures**: Ensure Node.js 18+ is installed and run `jac install` again
 5. **Slow ingredient generation**: The AI call takes a few seconds; the UI shows a loading spinner while waiting
 
 ## Learn More

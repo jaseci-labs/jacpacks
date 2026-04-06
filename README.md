@@ -235,7 +235,7 @@ jac create my-app --use https://example.com/template.jacpack
 
 ```bash
 # Install all dependencies defined in jac.toml
-jac add
+jac install
 
 # Add a Python package
 jac add requests
